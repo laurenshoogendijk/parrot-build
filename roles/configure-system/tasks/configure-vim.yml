@@ -3,3 +3,4 @@
   copy:
     src: "{{ role_path }}/files/vimrc"
     dest: "/etc/vim/vimrc"
+  become: true
