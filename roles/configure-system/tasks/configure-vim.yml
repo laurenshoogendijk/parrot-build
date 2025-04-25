@@ -1,0 +1,5 @@
+---
+- name: "Copying vimrc"
+  copy:
+    src: "{{ role_path }}/files/vimrc"
+    dest: "/etc/vim/vimrc"
