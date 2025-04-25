@@ -39,6 +39,14 @@
   become: true
   become_method: sudo
 
+- name: "Remove NeoVIM"
+  package:
+    name: 
+      - neovim
+    state: absent
+  become: true
+  become_method: sudo
+
 - name: "Installing Packages"
   package:
     name:
